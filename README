@@ -32,6 +32,7 @@ INSTRUCTIONS TO COMPILE
 Use the makefile to build the project
 Please make sure that the linker knows where to find the math library else please make sure you give the correct path to gcc command
 
+Note: Please create a bin folder if not present
 -----------------------------------------
 INSTRUCTIONS TO RUN
 -----------------------------------------
