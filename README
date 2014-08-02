@@ -1,0 +1,74 @@
+                                    A Verification of the results published in
+							  Measuring the Performance of Schedulability Tests - Enrico Bini, Giorgio C. Buttazzo
+							  Link to paper :: http://retis.sssup.it/~giorgio/paps/2005/rtsj05-bini.pdf
+								                   AND 
+									A Survey of Real-Time Hypervisors			   
+
+Index
+I.   Authors
+II.	 Description
+III. Copyright
+
+I. Authors
+    Rushang Vinod Vandana Karia
+	    - Masters in Computer Science
+		- Arizona State
+		- Rushang.Karia@asu.edu
+		
+II. Description								
+
+This software establishes the accuracy of the results
+presented in the paper. The results are presented in a report
+that is included in this project.
+
+Also, a survey of real-time hypervisors are presented.
+
+Below are instructions to compile and run the project as
+well as detailing some instructions.
+
+-----------------------------------------
+INSTRUCTIONS TO COMPILE
+-----------------------------------------
+Use the makefile to build the project
+Please make sure that the linker knows where to find the math library else please make sure you give the correct path to gcc command
+
+-----------------------------------------
+INSTRUCTIONS TO RUN
+-----------------------------------------
+Type "bin/Program" at the console
+
+The report is shown after you enter all the tasksets
+
+##################################################################################################################
+NOTE: you may have to be the root user if the current folder does not allow normal users to read/write to files.
+      This program writes 6 files to the same directory from where it is run
+##################################################################################################################
+
+-----------------------------------------
+BASIC ERRORS THAT MIGHT BE ENCOUNTERED
+-----------------------------------------
+If the program crashes please reduce the limit of MAX_* in the header file since it might be the case that the system does not have enough memory.
+
+Also try raising MAX_MEMORY to more than 1000 if the no of tasks is high in number. Since this variable keeps track of the RT,Loading Factor tests,
+having its value greater than the no of iterations required for convergence is crucial.
+
+III. Copyright
+
+    Copyright (C) 2014 Rushang Karia
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+									
+
+
